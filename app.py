@@ -18,7 +18,12 @@ def ReturnJSON():
   
         return jsonify(data)
 
-
+@app.route('/loop')
+def bigLoop():
+    that_string = ""
+    for num in range(200):
+        that_string += "Hello!\n"
+    return that_string
 
 if __name__ == '__main__':
      app.run (host="0.0.0.0", port=8080)
