@@ -5,7 +5,7 @@ app = Flask(__name__)
 
 @app.route("/")
 def hello():
-    return "Hello World CS298- Jim !"
+    return "Hello World CS298- Nick !"
 
   
 @app.route('/returnjson', methods = ['GET'])
